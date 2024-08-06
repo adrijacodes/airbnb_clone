@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRBNB</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="h-screen">
+        <div class="w-screen grid grid-cols-3 h-20 border-b-[1px] items-center fixed top-0 bg-white">
+            <div class="pl-15">
+                <img src="data:image/jpeg;base64,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" class="h-20 w-20">
+            </div>
+
+            <div class="px-8">
+                <div class="flex items-center justify-evenly rounded-full shadow-md h-12 w-96 border">
+                    <button class="border-r-2 border-gray-100 px-4 text-sm font-medium">Anywhere</button>
+                    <button class="border-r-2 border-gray-100 px-4 text-sm font-medium">Any week</button>
+                    <button class="border-gray-100 px-4 gray-text">Add guests</button>
+                    <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+                </div>
+            </div>
+            <div class="flex justify-end items-center pr-15 gap-8">
+                <p class="text-sm font-medium">Airbnb your home</p>
+                <span class="material-symbols-outlined">language</span>
+                <div class="flex justify-evenly items-center py-1.25 pr-1.25 pl-3 gap-2 rounded-full shadow-md h-10 w-20 border">
+                    <i class="fa-solid fa-bars"></i>
+                    <p class="bg-black text-white rounded-full w-7 h-7 text-center pt-1.5 text-[10px] font-semibold">E</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-24 flex items-center w-screen space-x-5 fixed top-20 bg-white">
+            <div class="flex items-center space-x-12 justify-center">
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 pl-16">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type1.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Amazing pools</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type2.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Play</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type3.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Historical Homes</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type4.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Countryside</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type5.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Surfing</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type6.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Farms</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type7.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Amazing views</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 ">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type8.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Rooms</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 ">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type9.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Lakefront</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 ">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type10.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Beachfront</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 ">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type11.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">OMG!</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-500 hover:text-black gap-2 ">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/type12.jpeg?raw=true" class="h-6 w-6"/>
+                    <p class="text-xs font-normal">Golfing</p>
+                </div>
+            </div>
+            <span class="material-symbols-outlined pl-4">arrow_circle_right</span>
+            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+                <span class="material-symbols-outlined pl-2">sync_alt</span>   
+                <p class="text-xs font-medium pl-2">Filters</p>
+            </div>
+        </div>
+        <section class="flex justify-center w-screen mt-48">
+            <div class="flex items-center justify-between rounded-xl p-4 border w-[600px] h-16">
+                <div class="w-[460px] flex justify-start">
+                    <p class="border-r-2 border-gray-100 pr-4 text-base font-medium">Display total price</p>
+                    <p class="border-gray-100 text-base text-gray-400 pl-4">Includes all fees, before taxes</p>
+                </div>
+                <span class="material-symbols-outlined">toggle_on</span>
+            </div>
+        </section>
+        <div class="mt-14 mx-10 w-screen">
+            <div class="grid grid-cols-4 gap-y-4">
+                <div class="flex flex-col h-96 w-72">
+                    <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/img1.jpg?raw=true" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Lonavla, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">62 kilometer away</p>
+                    <p class="text-sm text-gray-400">30 june- 4july</p>
+                    <p class="text-sm font-medium mt-2">₹42,701 night</p>
+                    </div>
+                        <div class="flex flex-col h-96 w-72">
+                            <img src="https://github.com/EtishaGarg/airbnb-clone-html-css/blob/main/public/static/img2.jpg?raw=true" class="rounded-xl w-72 h-64">
+                            <div class="flex justify-between mt-2">
+                                <p class="text-sm font-medium">Sun City Cottages, India</p>
+                                <div class="flex">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="text-sm font-light">5.0</p>
+                                </div>
+                        </div>
+                        <p class="text-sm text-gray-400">63 kilometers away</p>
+                        <p class="text-sm text-gray-400">22-27 Jul</p>
+                        <p class="text-sm font-medium mt-2">₹11,000 night</p>
+                    </div>
+                    <div class="flex flex-col h-96 w-72">
+                        <img src="https://www.hilton.com/im/en/CZMPCHH/7888781/czmpc-pool-3.jpg?impolicy=crop&cw=5000&ch=3203&gravity=NorthWest&xposition=0&yposition=64&rw=1280&rh=820" class="rounded-xl w-72 h-64">
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium">Grandview Palaces, India</p>
+                            <div class="flex">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="text-sm font-light">5.0</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">63 kilometers away</p>
+                        <p class="text-sm text-gray-400">22-27 Jul</p>
+                        <p class="text-sm font-medium mt-2">₹11,000 night</p>
+                    </div>
+    
+                    <div class="flex flex-col h-96 w-72">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHvvk4IR-x_g9VYXLQJUtSbhdM6J5zFVuC-Q&usqp=CAU" class="rounded-xl w-72 h-64">
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium">Royal Respite, India</p>
+                            <div class="flex">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="text-sm font-light">5.0</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">63 kilometers away</p>
+                        <p class="text-sm text-gray-400">22-27 Jul</p>
+                        <p class="text-sm font-medium mt-2">₹15,000 night</p>
+                    </div>
+                    <div class="flex flex-col h-96 w-72">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Md71f-ND85dbP4NQA2ShQJ5l2TEZd6KA3A&usqp=CAU" class="rounded-xl w-72 h-64">
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium">Splendid Sanctuary, India</p>
+                            <div class="flex">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="text-sm font-light">5.0</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">20 kilometers away</p>
+                        <p class="text-sm text-gray-400">22-27 Jul</p>
+                        <p class="text-sm font-medium mt-2">₹21,134 night</p>
+                    </div>
+    
+                    <div class="flex flex-col h-96 w-72">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb86hCJL5WRgFAWLZuEmRhICKR5HNm8pOylg&usqp=CAU" class="rounded-xl w-72 h-64">
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium">Luxe Lagoon, India</p>
+                            <div class="flex">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="text-sm font-light">5.0</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">30 kilometers away</p>
+                        <p class="text-sm text-gray-400">22-27 Jul</p>
+                        <p class="text-sm font-medium mt-2">₹10,000 night</p>
+                    </div>
+                    <div class="flex flex-col h-96 w-72">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThVd68kAbNSXPAfN9DEGlvjOQMD3kUrjE3qA&usqp=CAU" class="rounded-xl w-72 h-64">
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium">Noble Nook, India</p>
+                            <div class="flex">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="text-sm font-light">5.0</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">68 kilometers away</p>
+                        <p class="text-sm text-gray-400">22-27 Jul</p>
+                        <p class="text-sm font-medium mt-2">₹26,000 night</p>
+                    </div>
+    
+                    <div class="flex flex-col h-96 w-72">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReXLveAufW3OtFYx_WEDSqSRuwiVEWuWSzcw&usqp=CAU" class="rounded-xl w-72 h-64">
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium">Cozy Retreat, India</p>
+                            <div class="flex">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="text-sm font-light">5.0</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">26 kilometers away</p>
+                        <p class="text-sm text-gray-400">22-27 Jul</p>
+                        <p class="text-sm font-medium mt-2">₹11,220 night</p>
+                    </div>
+                    </div>
+                    </div>
+                    <footer class="h-9 fixed bottom-0 w-screen bg-white flex justify-between items-center px-10">
+                        <div class="flex space-x-2 text-sm font-base">
+                            <p>© 2023 Airbnb, Inc.</p>
+                            <p>·</p>
+                            <p>Privacy</p>
+                            <p>·</p>
+                            <p>Terms</p>
+                            <p>·</p>
+                            <p>Sitemap</p>
+                            <p>·</p>
+                            <p>Company details</p>
+                        </div>
+                        <div class="flex space-x-4 text-sm font-medium">
+                            <span class="material-symbols-outlined">language</span>
+                            <p>English(IN)</p>
+                            <p>₹ INR</p>
+                            <p>Support & resources</p>
+                        </div>
+                </footer>
+        
+            </div>
+    
+    
+
+
+
+    
+</body>
+</html>
